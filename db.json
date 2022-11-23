@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": 5,
+      "name": "Sizzler",
+      "email": "sizzler@yahoo.com",
+      "mobile": 789456123,
+      "address": "Gulmohar",
+      "service": "Bar"
+    },
+    {
+      "id": 6,
+      "name": "park-city",
+      "email": "park@gmail.com",
+      "mobile": 4524867,
+      "address": "indore",
+      "service": "food service"
+    }
+  ],
+  "comments": [],
+  "signup": [
+    {
+      "name": "Aman",
+      "email": 859451632,
+      "mobile": "ojha03170@gmail.com",
+      "password": "123qweasd",
+      "id": 1
+    },
+    {
+      "name": "Aman",
+      "email": 985431203,
+      "mobile": "ojha03170@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Aman",
+      "email": 478922,
+      "mobile": "ojha03170@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "Aman",
+      "email": 6263118510,
+      "mobile": "ojha03170@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "Aman",
+      "email": 789456,
+      "mobile": "ojha03170@gmail.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Aman",
+      "email": 789456,
+      "mobile": "ojha03170@gmail.com",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "name": "Aman",
+      "email": "",
+      "mobile": "",
+      "password": "ojha",
+      "id": 7
+    },
+    {
+      "name": "Aman",
+      "email": 785641,
+      "mobile": "ojha03170@gmail.com",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "name": "Aman",
+      "email": 87456231,
+      "mobile": "ojha03170@gmail.com",
+      "password": "12345",
+      "id": 9
+    },
+    {
+      "name": "Aman",
+      "email": "ojha03170@gmail.com",
+      "mobile": "",
+      "password": "12345",
+      "id": 10
+    },
+    {
+      "name": "Aman",
+      "email": "ojha03170@gmail.com",
+      "mobile": "",
+      "password": "12345",
+      "id": 11
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
