@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environments';
 
 @Component({
   selector: 'app-signup',
@@ -23,7 +24,7 @@ export class SignupComponent implements OnInit{
   }
 
   signUp(){
-    this._http.post<any>("http://localhost:3000/signup", this.signupForm.value).subscribe(res => {
+    this._http.post<any>(`${environment.apiUrl}/signup`, this.signupForm.value).subscribe(res => {
       alert("Registration success");
       this.signupForm.reset();  
       this.router.navigate(['login'])

@@ -1,20 +1,20 @@
 {
   "posts": [
     {
-      "id": 5,
-      "name": "Sizzler",
-      "email": "sizzler@yahoo.com",
-      "mobile": 789456123,
-      "address": "Gulmohar",
-      "service": "Bar"
-    },
-    {
       "id": 6,
-      "name": "park-city",
+      "name": "park-city indore78",
       "email": "park@gmail.com",
       "mobile": 4524867,
       "address": "indore",
       "service": "food service"
+    },
+    {
+      "id": 7,
+      "name": "mick vue",
+      "email": "mick@gmail.com",
+      "mobile": 789456,
+      "address": "Indore",
+      "service": "food"
     }
   ],
   "comments": [],
@@ -95,6 +95,27 @@
       "mobile": "",
       "password": "12345",
       "id": 11
+    },
+    {
+      "name": "Aman",
+      "email": "",
+      "mobile": "",
+      "password": "ojha",
+      "id": 12
+    },
+    {
+      "name": "Aman",
+      "email": "ojha03170@gmail.com",
+      "mobile": "",
+      "password": "12345",
+      "id": 13
+    },
+    {
+      "name": "Aman",
+      "email": "ojha03170@gmail.com",
+      "mobile": "",
+      "password": "12345",
+      "id": 14
     }
   ],
   "profile": {
