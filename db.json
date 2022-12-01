@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 6,
-      "name": "park-city indore78",
+      "name": "park-city indore",
       "email": "park@gmail.com",
       "mobile": 4524867,
       "address": "indore",
@@ -13,6 +13,14 @@
       "name": "mick vue",
       "email": "mick@gmail.com",
       "mobile": 789456,
+      "address": "Indore",
+      "service": "food"
+    },
+    {
+      "id": 8,
+      "name": "ankit ",
+      "email": "a@gmail.com",
+      "mobile": 78894613,
       "address": "Indore",
       "service": "food"
     }
@@ -116,6 +124,13 @@
       "mobile": "",
       "password": "12345",
       "id": 14
+    },
+    {
+      "name": "Aman",
+      "email": "aman.ojha@newvisionsoftware.io",
+      "mobile": "",
+      "password": "12345",
+      "id": 15
     }
   ],
   "profile": {

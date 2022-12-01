@@ -16,6 +16,8 @@ export class RestaurentdashComponent implements OnInit{
   formModal : any 
   showAdd! : boolean
   showBtn! : boolean
+  errBlock! : boolean
+  errorText!: string
   restaurentModelObj: RestaurentData = new RestaurentData;
   allRestaurentData: any;
   constructor(private formBuilder:FormBuilder, private api: ApiService) { }
@@ -58,8 +60,12 @@ export class RestaurentdashComponent implements OnInit{
   }
 
   getAllData() {
-    this.api.getRestaurent(this.restaurentModelObj).subscribe(res=> {
+    this.api.getRestaurent().subscribe(res=> {
       this.allRestaurentData = res;
+    },
+    error => {
+      this.errBlock = true;
+      this.errorText = error.message;
     })
   }
 
