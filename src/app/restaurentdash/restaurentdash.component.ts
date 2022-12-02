@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from '../shared/api.service';
 import { RestaurentData } from './restaurentModel';
+import {NotificationsService} from 'angular2-notifications';
+import { NotifierService } from 'angular-notifier';
+import { NotifierModule } from 'angular-notifier';
+
 
 declare var window: any
 
@@ -20,7 +24,12 @@ export class RestaurentdashComponent implements OnInit{
   errorText!: string
   restaurentModelObj: RestaurentData = new RestaurentData;
   allRestaurentData: any;
-  constructor(private formBuilder:FormBuilder, private api: ApiService) { }
+  private readonly notifier: NotifierService;
+  
+
+  constructor(private formBuilder:FormBuilder, private api: ApiService, notifierService: NotifierService) {
+    this.notifier = notifierService;
+   }
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
@@ -51,12 +60,19 @@ export class RestaurentdashComponent implements OnInit{
     this.restaurentModelObj.service = this.formValue.value.service;
 
     this.api.postRestaurent(this.restaurentModelObj).subscribe(res => {
-      console.log(res);
-      alert("Restaurent Record Added");
+      // alert("Restaurent Record Added");
       this.formValue.reset();
       this.getAllData();
     },
     )
+  }
+
+  onSuccess() {
+    this.notifier.show({
+      type: 'success',
+      message: 'You are awesome! I mean it!',
+      id: 'THAT_NOTIFICATION_ID', // Again, this is optional
+    });
   }
 
   getAllData() {

@@ -18,11 +18,19 @@
     },
     {
       "id": 8,
-      "name": "ankit ",
-      "email": "a@gmail.com",
-      "mobile": 78894613,
+      "name": "office",
+      "email": "Off@gmail.com",
+      "mobile": 78945613,
       "address": "Indore",
-      "service": "food"
+      "service": "manufacture"
+    },
+    {
+      "id": 9,
+      "name": "aman",
+      "email": null,
+      "mobile": null,
+      "address": null,
+      "service": null
     }
   ],
   "comments": [],
@@ -131,6 +139,13 @@
       "mobile": "",
       "password": "12345",
       "id": 15
+    },
+    {
+      "name": "Aman",
+      "email": "aman.ojha@newvisionsoftware.io",
+      "mobile": "",
+      "password": "12345",
+      "id": 16
     }
   ],
   "profile": {

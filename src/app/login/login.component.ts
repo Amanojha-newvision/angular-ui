@@ -10,6 +10,9 @@ import { environment } from 'src/environments/environments';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
+  // static getToken() {
+  //   throw new Error('Method not implemented.');
+  // }
 
   loginForm!: FormGroup;
   constructor(private formBuilder:FormBuilder, private _http:HttpClient, private router: Router) {}
@@ -19,6 +22,10 @@ export class LoginComponent implements OnInit{
       password:[''],
      })
   }
+
+  // getToken() {
+  //   return localStorage.getItem('token')
+  // }
 
   logIn(){
     this._http.get<any>(`${environment.apiUrl}/signup`).subscribe(res=>{
