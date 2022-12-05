@@ -5,6 +5,7 @@ import { RestaurentData } from './restaurentModel';
 import {NotificationsService} from 'angular2-notifications';
 import { NotifierService } from 'angular-notifier';
 import { NotifierModule } from 'angular-notifier';
+import { findIndex } from 'rxjs';
 
 
 declare var window: any
@@ -22,6 +23,7 @@ export class RestaurentdashComponent implements OnInit{
   showBtn! : boolean
   errBlock! : boolean
   errorText!: string
+  index!: number
   restaurentModelObj: RestaurentData = new RestaurentData;
   allRestaurentData: any;
   private readonly notifier: NotifierService;
@@ -39,7 +41,7 @@ export class RestaurentdashComponent implements OnInit{
       address:[''],
       service:[''],
     })
-    this.getAllData();
+    this.getAllData(this.index);
   }
   
   clickAddResto() {
@@ -52,7 +54,7 @@ export class RestaurentdashComponent implements OnInit{
     this.formModal?.show();
   }
 
-  addResto() {
+  addResto() { 
     this.restaurentModelObj.name = this.formValue.value.name;
     this.restaurentModelObj.email = this.formValue.value.email;
     this.restaurentModelObj.mobile = this.formValue.value.mobile;
@@ -62,7 +64,7 @@ export class RestaurentdashComponent implements OnInit{
     this.api.postRestaurent(this.restaurentModelObj).subscribe(res => {
       // alert("Restaurent Record Added");
       this.formValue.reset();
-      this.getAllData();
+      this.getAllData(this.index);
     },
     )
   }
@@ -75,7 +77,7 @@ export class RestaurentdashComponent implements OnInit{
     });
   }
 
-  getAllData() {
+  getAllData(index: number) {
     this.api.getRestaurent().subscribe(res=> {
       this.allRestaurentData = res;
     },
@@ -88,7 +90,7 @@ export class RestaurentdashComponent implements OnInit{
   deleteResto(data: any) {
     this.api.deleteRestaurent(data.id).subscribe(res=> {
       alert("Data is deleted");
-      this.getAllData();
+      this.getAllData(this.index);
     })
   }
 
@@ -113,7 +115,7 @@ export class RestaurentdashComponent implements OnInit{
     this.api.updateRestaurent(this.restaurentModelObj, this.restaurentModelObj.id).subscribe(res=>{
       alert("Updated successfully");
       this.formValue.reset();
-      this.getAllData();
+      this.getAllData(this.index);
     })
   }
 }

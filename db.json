@@ -1,33 +1,17 @@
 {
   "posts": [
     {
-      "id": 6,
-      "name": "park-city indore",
-      "email": "park@gmail.com",
-      "mobile": 4524867,
-      "address": "indore",
-      "service": "food service"
-    },
-    {
       "id": 7,
-      "name": "mick vue",
+      "name": "mick vue123",
       "email": "mick@gmail.com",
-      "mobile": 789456,
+      "mobile": 789456231,
       "address": "Indore",
-      "service": "food"
+      "service": "good food "
     },
     {
-      "id": 8,
-      "name": "office",
-      "email": "Off@gmail.com",
-      "mobile": 78945613,
-      "address": "Indore",
-      "service": "manufacture"
-    },
-    {
-      "id": 9,
-      "name": "aman",
-      "email": null,
+      "id": 10,
+      "name": "ojha03170@gmail.com",
+      "email": "ojha03170@gmail.com",
       "mobile": null,
       "address": null,
       "service": null
@@ -146,6 +130,13 @@
       "mobile": "",
       "password": "12345",
       "id": 16
+    },
+    {
+      "name": "Aman",
+      "email": "ojha03170@gmail.com",
+      "mobile": "",
+      "password": "12345",
+      "id": 17
     }
   ],
   "profile": {
